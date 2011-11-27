@@ -1,0 +1,39 @@
+set imap_user = "al.mclean@gmail.com"
+set imap_pass = "Scotia10"
+
+set spoolfile = "imaps://imap.gmail.com/INBOX"
+set folder = "imaps://imap.gmail.com/"
+set record = "imaps://imap.gmail.com/[Gmail]/Sent Mail"
+set postponed = "imaps://imap.gmail.com/[Gmail]/Drafts"
+set mbox = "imaps://imap.gmail.com/[Gmail]/All Mail"
+set trash = "imaps://imap.gmail.com/[Gmail]/Trash"
+
+set smtp_url = "smtp://al.mclean@smtp.gmail.com:587/"
+set smtp_pass = "Scotia10"
+set from = "al.mclean@gmail.com"
+set realname = "Alistair McLean"
+
+set header_cache=~/.mutt/cache/headers
+set message_cachedir=~/.mutt/cache/bodies
+set certificate_file=~/.mutt/certificates
+
+unset imap_passive
+
+# Polling frequency
+set mail_check=60
+
+# Poll the current mailbox
+set timeout=10
+
+# Display download progress every 5K
+set net_inc=5
+
+set ssl_starttls=yes
+set sort = 'threads'
+set sort_aux = 'last-date-received'
+set imap_check_subscribed
+
+ignore "Authentication-Results:"
+ignore "DomainKey-Signature:"
+ignore "DKIM-Signature:"
+hdr_order Date From To Cc
