@@ -1,3 +1,5 @@
+syntax enable
+set background=dark
 colorscheme xoria256 
 set undolevels=100
 set nocompatible
@@ -11,6 +13,4 @@ set shiftwidth=4
 set tabstop=4
 set novisualbell 
 set ruler
-set background=dark
-syntax on
-
+set guifont=Inconsolata:h12
